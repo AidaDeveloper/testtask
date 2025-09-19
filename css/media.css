@@ -254,21 +254,19 @@
         margin-right: 0;
         width: 16.5px;
         height: 16.5px;
+        fill: white;
     }
     .nav__delivery~svg{
         width: 19px;
         height: 18px;
     }
-    .nav__search-icon.nav__search-icon-mobile{
+    .search_mobile.show_search{
         display: block;
-        margin-right: 0;
-        width: 16.5px;
-        height: 16.5px;
-        fill: white;
-    }
-    .nav__search-icon.nav__search-icon-mobile:hover{
-        fill: #FBFF3D;
-        cursor: pointer;
+        background: #1F497B;
+        padding: 11px 0 12px 20px;
+        font-size: 16px;
+        position: absolute;
+        width: 100%;
     }
     .product-card.product-card--featured{
         flex-direction: column;

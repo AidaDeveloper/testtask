@@ -259,6 +259,17 @@
         width: 19px;
         height: 18px;
     }
+    .nav__search-icon.nav__search-icon-mobile{
+        display: block;
+        margin-right: 0;
+        width: 16.5px;
+        height: 16.5px;
+        fill: white;
+    }
+    .nav__search-icon.nav__search-icon-mobile:hover{
+        fill: #FBFF3D;
+        cursor: pointer;
+    }
     .product-card.product-card--featured{
         flex-direction: column;
         gap: 20px;

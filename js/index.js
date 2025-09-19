@@ -102,4 +102,26 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+ //search
+ const searchIcon = document.querySelector('.nav__search-icon-mobile');
+ const searchInput = document.querySelector('.search_mobile');
+ 
+ if (searchIcon && searchInput) {
+     searchIcon.addEventListener('click', e => {
+         e.stopPropagation();
+         searchInput.classList.toggle('show_search');
+     });
+ 
+     document.addEventListener('click', e => {
+         if (!searchInput.contains(e.target) && !searchIcon.contains(e.target)) {
+             searchInput.classList.remove('show_search');
+         }
+     });
+     searchInput.querySelectorAll('a').forEach(link => {
+         link.addEventListener('click', () => {
+             searchInput.classList.remove('show_search');
+         });
+     });
+ }
+
 });

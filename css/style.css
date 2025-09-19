@@ -124,6 +124,9 @@ header{
 .nav__cart svg{
     fill: white;
 }
+.search_mobile{
+    display: none;
+}
 /* header + nav  end*/
 
 /* Filters*/
